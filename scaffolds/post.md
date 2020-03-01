@@ -1,6 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
+author:
+img:
 top: false
 cover: false
 password:
@@ -9,4 +11,6 @@ mathjax: true
 summary:
 tags:
 categories:
+keywords: {{ title }}
+reprintPolicy:
 ---

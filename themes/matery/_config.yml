@@ -278,8 +278,8 @@ gitalk:
   owner: hfutjcd
   repo: hfutjcd.github.io
   oauth:
-    clientId: 
-    clientSecret: 
+    clientId: c7b09ebf8b9fa372b764
+    clientSecret: c919d87f0594256063868bb8886e13b07a093bb2
   admin: hfutjcd
 
 # the Gitment config，default disabled
@@ -308,7 +308,7 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: true
+  enable: false
   appId: 
   appKey: 
   notify: false

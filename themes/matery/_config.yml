@@ -90,8 +90,8 @@ music:
 video:
   enable: true
   showTitle: true
-  title: 精彩视频
-  url: # 必填
+  title: 爱情36计
+  url: https://vdept.bdstatic.com/3466647477745637744e744173664679/69646362326c7147/fc767cb783c8f093ca786f132b44bd97736435def5a8612a9ffc467970294ed6faa40cd5d66c441c2fc751137ce9f99a.mp4?auth_key=1583076962-0-0-a2d735903e2d4ed5d5d993914476ccaf  # 必填
   pic:
   thumbnails:
   height: # 如：400

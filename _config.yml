@@ -6,10 +6,86 @@
 title: Hunter
 subtitle: "Hunter's blog"
 description: '欲穷千里目，更上一层楼'
-keywords:
+keywords: "ISP DSP GPU Android"
 author: hfut
 language: zh-CN
 timezone: ''
+# main menu navigation url and icon
+# 配置菜单导航的名称、路径和图标icon.
+menu:
+  Index:
+    url: /
+    icon: fas fa-home
+  Tags:
+    url: /tags
+    icon: fas fa-tags
+  Categories:
+    url: /categories
+    icon: fas fa-bookmark
+  Archives:
+    url: /archives
+    icon: fas fa-archive
+  About:
+    url: /about
+    icon: fas fa-user-circle
+  Friends:
+    url: /friends
+    icon: fas fa-address-book
+  Medias:
+    icon: fas fa-list
+    children:
+      - name: Musics
+        url: /musics
+        icon: fas fa-music
+      - name: Movies
+        url: /movies
+        icon: fas fa-film
+      - name: Books
+        url: /books
+        icon: fas fa-book
+      - name: Galleries
+        url: /galleries
+        icon: fas fa-image
+  Contact:
+    url: /contact
+    icon:
+# 代码高亮 npm i -S hexo-prism-plugin
+# highlight:
+#   enable: false
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
+
+#增加搜索功能 npm install hexo-generator-search --save
+search:
+  path: search.xml
+  field: post
+
+#中文链接转拼音 npm i hexo-permalink-pinyin --save
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+
+# 增加emoji表情支持 npm install hexo-filter-github-emojis --save
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+#添加RSS订阅支持 npm install hexo-generator-feed --save
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -45,7 +121,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -98,4 +174,6 @@ theme: matery
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+- type: git
+  repository: git@github.com:hfutjcd/hfutjcd.github.io.git
+  branch: master

@@ -7,7 +7,7 @@ title: Hunter
 subtitle: "Hunter's blog"
 description: '欲穷千里目，更上一层楼'
 keywords: "ISP DSP GPU Android"
-author: hfutjcd
+author: Hunter
 language: zh-CN
 timezone: ''
 # main menu navigation url and icon
@@ -86,6 +86,14 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+# 增加 mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -169,13 +177,13 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: matery
-
+theme: 3-hexo
+ 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
   repo: 
     github: git@github.com:hfutjcd/hfutjcd.github.io.git
-    aicloud: root@jcd:/root/Repos/ORServer
+    aicloud: root@blog:/root/Repos/blog  #root@jcd:/root/Repos/ORServer
   branch: master

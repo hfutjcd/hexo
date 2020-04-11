@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author:
+author: Hunter
 img:
 top: false
 cover: false

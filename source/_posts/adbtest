@@ -1,0 +1,57 @@
+echo "$(date)"
+source /home/jcd/.bashrc
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input keyevent 224
+sleep 1
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input swipe 300 1000 300 500
+sleep 1
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 547 1850
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 519 1411
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 547 1850
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 510 1211
+sleep 1
+# /home/jcd/bin/android_sdk/platform-tools/adb -s REQ0118B29000600 shell "am start -n com.jd.jrapp/com.jd.jrapp.bm.mainbox.main.MainActivity"
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell "am start -n  com.cis.jiangnan.taptap/com.cis.cisframework.CISActivity"
+sleep 25
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 326 186
+sleep 1
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input swipe 200 800 800 1313  3000
+sleep 1
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input swipe 200 1374 895 1374  3000
+sleep 1
+production(){
+    count=`expr $count + 1`
+    echo $count $1 $2
+    /home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap $1 $2
+    sleep 1
+    /home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 774 689
+    sleep 1
+    /home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 690 724
+    sleep 1
+}
+# # coord_x=
+# count=0
+production 507 910
+production 376 993
+production 621 998
+production 470 1044
+production 745 1058
+production 137 1109
+production 378 1105
+production 866 1103
+production 47 1167
+production 266 1169
+production 753 1177
+production 990 1174
+production 146 1218
+production 620 1232  
+production 856 1238
+production 269 1290
+production 499 1293
+production 382 1347
+production 504 1412
+
+
+sleep 5
+adb shell am force-stop com.cis.jiangnan.taptap
+
+/home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input keyevent 223

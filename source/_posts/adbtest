@@ -28,27 +28,29 @@ production(){
     /home/jcd/bin/android_sdk/platform-tools/adb -s MQS0219828001527 shell input tap 690 724
     sleep 1
 }
-# # coord_x=
-# count=0
-production 507 910
-production 376 993
-production 621 998
-production 470 1044
-production 745 1058
-production 137 1109
-production 378 1105
-production 866 1103
-production 47 1167
-production 266 1169
-production 753 1177
-production 990 1174
-production 146 1218
-production 620 1232  
-production 856 1238
-production 269 1290
-production 499 1293
-production 382 1347
-production 504 1412
+    adb shell input swipe 200 800 800 1325  3000
+    REM timeout /T 1 /NOBREAK
+    adb shell input swipe 200 1374 900 1374  3000
+    REM timeout /T 1 /NOBREAK
+    call:production 532 935   REM 507 910
+    call:production 400 995   REM 376 993
+    call:production 645 998   REM 621 998
+    call:production 470 1058  REM 465 1055
+    call:production 767 1058  REM 745 1058
+    call:production 157 1122  REM 137 1109
+    call:production 400 1125  REM 378 1105
+    call:production 886 1123  REM 866 1103
+    call:production 45 1177   REM 47 1167
+    call:production 282 1179  REM 266 1169
+    call:production 765 1177  REM 753 1177
+    call:production 1010 1180 REM 990 1174
+    call:production 160 1240  REM 146 1218
+    call:production 650 1240  REM 620 1232  
+    call:production 880 1238  REM 856 1238
+    call:production 280 1300  REM 269 1290
+    call:production 525 1300  REM 499 1293 
+    call:production 400 1360  REM 382 1347
+    call:production 520 1420  REM 504 1412
 
 
 sleep 5

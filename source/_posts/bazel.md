@@ -29,7 +29,8 @@ Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. 
   sudo cp output/bazel /usr/local/bin/
   ```
   
-  * 如果联网需要代理，需要使用cntlm配置代理，export http_proxy=http://127.0.0.1:xxxx
+  * 如果联网需要代理，需要使用cntlm配置代理，
+e1x1p1o1r1t h1t1t1p1_proxy=http1:1//127.0.0.1:xxxx
   
   ## build with Bazel
   以[tensorflow lite](https://github.com/tensorflow/tensorflow.git)为例，clone 工程到本地目录。

@@ -185,5 +185,5 @@ deploy:
 - type: git
   repo: 
     github: git@github.com:hfutjcd/hfutjcd.github.io.git
-    aicloud: root@blog:/root/Repos/blog  #root@jcd:/root/Repos/ORServer
+    #aicloud: root@blog:/root/Repos/blog  #root@jcd:/root/Repos/ORServer
   branch: master

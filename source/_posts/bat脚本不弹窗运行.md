@@ -1,3 +1,22 @@
+---
+title:bat脚本不弹窗执行
+top: false
+cover: false
+toc: true
+mathjax: true
+keywords: bat
+date: 2021-01-25
+author: Hunter
+img:
+password:
+summary:
+tags:
+	[bat]
+categories: 编程
+reprintPolicy:
+typora-copy-images-to: 
+typora-root-url: bat脚本不弹窗执行
+---
 目的：
   通过脚本执行一个长期服务的时候，不希望服务一直在前台运行，在点击脚本后，自动切到后台。
   以adbforward为例。

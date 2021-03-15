@@ -38,9 +38,7 @@ Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. 
   配置工程目录下的configure文件，'./configure'。根据自己的硬件配置，开关相应的选项。
   [操作引导]（https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark）
   ```
-  bazel build -c opt \
-  --config=android_arm64 \
-  tensorflow/lite/tools/benchmark:benchmark_model
+  bazel build -c opt --config=android_arm64 tensorflow/lite/tools/benchmark:benchmark_model
   ```
   *如果出现网站鉴权问题，可以配置bazel如下*
   ```

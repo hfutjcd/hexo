@@ -1,3 +1,22 @@
+---
+title: build with Bazel
+top: false
+cover: false
+toc: true
+mathjax: true
+keywords: bazel
+date: 2020-06-8
+author: Hunter
+img:
+password:
+summary:
+tags:
+	[bazel]
+categories: 编译工具
+reprintPolicy:
+typora-copy-images-to: build with Bazel
+typora-root-url: build with Bazel
+---
 # build with [Bazel](https://docs.bazel.build/versions/master/bazel-overview.html)
 ## what is Bazel?
 What is Bazel?

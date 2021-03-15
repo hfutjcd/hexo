@@ -30,8 +30,9 @@ Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. 
   ```
   
   * 如果联网需要代理，需要使用cntlm配置代理，
-e1x1p1o1r1t h1t1t1p1_proxy=http1:1//127.0.0.1:xxxx
-  
+  ```
+  e1x1p1o1r1t h1t1t1p1_proxy=http1:1//127.0.0.1:xxxx
+  ```
   ## build with Bazel
   以[tensorflow lite](https://github.com/tensorflow/tensorflow.git)为例，clone 工程到本地目录。
   配置工程目录下的configure文件，'./configure'。根据自己的硬件配置，开关相应的选项。

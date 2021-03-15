@@ -1,3 +1,22 @@
+---
+title: ubuntu install android sdk ndk
+top: false
+cover: false
+toc: true
+mathjax: true
+keywords: android sdk
+date: 2020-03-11 22:25:43
+author: Hunter
+img:
+password:
+summary:
+tags:
+	[android,sdk]
+categories: Android,linux
+reprintPolicy:
+typora-copy-images-to: ubuntu install android sdk ndk
+typora-root-url: 学习android-显示系统
+---
 # sdk安装
 ## 安装 android-sdk
 ```

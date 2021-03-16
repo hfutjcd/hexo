@@ -245,8 +245,8 @@ gentie:
 gitalk:
   githubID: hfutjcd
   repo: hfutjcd.github.io
-  ClientID: b0dd697d234306148143
-  ClientSecret: 55f7c1630321f39c958683d2d8ba2133f6832212
+  ClientID: e7d8054ec8ee883bd926
+  ClientSecret: 6592168627b00b0121c1ca6b4e90708550980e41
   adminUser: hfutjcd
   distractionFreeMode: false
   language: zh-CN

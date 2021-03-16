@@ -1,5 +1,5 @@
 ---
-title:bat脚本不弹窗执行
+title: bat脚本不弹窗执行
 top: false
 cover: false
 toc: true
@@ -20,7 +20,7 @@ typora-root-url: bat脚本不弹窗执行
 目的：
   通过脚本执行一个长期服务的时候，不希望服务一直在前台运行，在点击脚本后，自动切到后台。
   以adbforward为例。
-  
+
  ```shell
  @echo off
 

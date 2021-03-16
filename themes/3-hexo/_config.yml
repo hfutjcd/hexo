@@ -1,13 +1,13 @@
 version: 1.0.1
 # 你的头像url
-avatar: /img/avatar2.jpg
-favicon: /img/avatar2.jpg
+avatar: /img/avatar.jpg
+favicon: /img/avatar.jpg
 
 #如果博客放置位置不是根目录，则可以通过配置此路径解决静态文件路径错误问题
 # 比如访问地址为 yelog.org/blog 那就需要配置为 blog_path: /blog 才能正常访问
 blog_path: /
 
-#链接图标 显示顺序和下面顺序一致 
+#链接图标 显示顺序和下面顺序一致
 link:
   theme: color # 链接样式，color: 彩色图标  white: 黑白图标
   items:
@@ -41,6 +41,13 @@ author:
 category:
   num: true # 分类显示文章数
   sub: true # 开启多级分类
+  sort:
+    - 读书
+    - 工具
+    - 大前端
+    - 后端
+    - 数据库
+    - 运维
   width:
     lg: 120 # 1468px<屏幕宽度 左侧分类宽度
     md: 100 # 1024px<屏幕宽度<=1468px 左侧分类宽度
@@ -50,6 +57,9 @@ category:
 # categories:
 #   - 工具
 #   - hexo
+
+# 快捷键
+shortcutKey: true
 
 # 左下角自定义菜单
 menu:
@@ -80,10 +90,17 @@ bottom_text: ©2019-2029 Hunter
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
+# 底部备案号
+miit:
+  on: false
+  info: 京ICP证030173号
+  url: http://beian.miit.gov.cn/ # 默认链接为 http://beian.miit.gov.cn/
+
+
 reward: true
 # true 开启打赏功能
 
-searchAll: true
+searchAll: false
 # true 启用全文搜索
 # 开启此功能需要下面操作：
 # 1. 在 hexo 根目录 执行 npm install hexo-generator-search --save 安装插件
@@ -93,7 +110,7 @@ searchAll: true
 #   field: post
 
 
-copyright: true
+copyright: false
 # Copyright info. of post | 文末版权信息
 
 word_count: true
@@ -163,8 +180,9 @@ code:
 # github: github样式（灰色底，黑字）
 
 highlight:
-  on: true # true开启代码高亮
+  on: true # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
   lineNum: true # true显示行号
+  copy: true # 复制功能
   theme: atom-light
 # 代码高亮主题,效果可以查看 https://highlightjs.org/static/demo/
 # 支持主题：
@@ -211,8 +229,9 @@ friends:
 ##########评论设置#############
 comment:
   on: true
-  type: gitalk  # 评论系统：gitalk、disqus、gentie、gitment,注意：使用时，在下方对应位置进行配置
-  comment_count: true  # 文章标题下方显示评论数
+  type: gitalk  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
+  comment_count: true  # 文章标题下方显示评论数 目前仅支持 gitalk 和 disqus
+  ## 使用说明 https://yelog.org//2020/05/23/3-hexo-comment/
   preload_comment: false  # 预加载评论区
   ## false: 当点击评论条等区域时再加载评论模块
   ## true: 页面加载时加载评论区
@@ -258,7 +277,19 @@ gitment:
   # gitment : 通过github issue实现的评论系统
   # 开源地址 : https://github.com/imsun/gitment
   # 使用说明 :
-  #
+
+livere:
+  data_uid:
+  # 来必力: http://livere.com/
+  # 使用说明 : https://yelog.org//2020/05/23/3-hexo-comment/
+
+utteranc:
+  repo: xxx/xxx.github.io # 承载评论的仓库，填上自己新建的仓库
+  issue_term: pathname    # Issue 与 博客文章 之间映射关系
+  label: utteranc         # 创建的 Issue 添加的标签
+  theme: github-light     # 主题，可选主题请查看官方文档 https://utteranc.es/#heading-theme
+# 官方文档 https://utteranc.es/
+# 使用说明 https://yelog.org//2020/05/23/3-hexo-comment/
 
 ##############################
 

@@ -12,7 +12,7 @@ password:
 summary:
 tags:
 	[android,sdk]
-categories: [Android, linux]
+categories: Android, linux, 编译工具
 reprintPolicy:
 typora-copy-images-to: ubuntu install android sdk ndk
 typora-root-url: 学习android-显示系统
